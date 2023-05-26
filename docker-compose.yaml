@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  front:
+    image: node:18
+    container_name: web-ui-dev
+    ports:
+      - 4200:4200
+    volumes:
+      - ./web-ui:/opt/src
+    tty: true
+  api:
+    image: node:18
+    container_name: api-dev
+    ports:
+      - 8080:8080
+    volumes:
+      - ./api:/opt/src
+    tty: true
