@@ -1,0 +1,4 @@
+.history
+.env
+*.local
+node_modules
